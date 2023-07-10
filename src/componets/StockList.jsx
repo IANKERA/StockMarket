@@ -75,7 +75,8 @@ export const StockList = () => {
             <tr className="table-row" key={stockData.symbol}>
               <th scope="row"> {stockData.symbol} </th>
               <td>{stockData.data.c}</td>
-              <td className={`text-${changeColor(stockData.data.d)}`}>                          {stockData.data.d}{renderIcon(stockData.data.d)}
+              <td className={`text-${changeColor(stockData.data.d)}`}>    
+                {stockData.data.d}{renderIcon(stockData.data.d)}
               </td>
               <td className=
                 {`text-${changeColor(stockData.data.d)}`}>
